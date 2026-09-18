@@ -1,0 +1,27 @@
+{
+  "_说明": "把 mcpServers 这一段合并进你的 MCP 客户端配置。路径改成你自己的绝对路径。",
+
+  "mcpServers": {
+    "today-tasks": {
+      "command": "python3",
+      "args": ["/ABSOLUTE/PATH/TO/today-tasks/mcp_server.py"]
+    }
+  },
+
+  "_Windows 示例": {
+    "mcpServers": {
+      "today-tasks": {
+        "command": "python",
+        "args": ["C:/Users/你的用户名/today-tasks/mcp_server.py"],
+        "env": {
+          "TODAY_TASKS_DATA": "C:/Users/你的用户名/Documents/我的任务/tasks.json"
+        }
+      }
+    }
+  },
+
+  "_环境变量": {
+    "TODAY_TASKS_DATA": "数据文件路径。不设置就用仓库目录下的 tasks.json",
+    "MCP_DEBUG": "设成 1 会把收到的每条消息打到 stderr，排查配置问题时用"
+  }
+}

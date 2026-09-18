@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# 运行时产物
+.tasks-*.tmp
+tasks.json.lock
+tasks.json.*.bak
+
+# 你自己的任务数据 —— 个人隐私，默认不进仓库。
+# 想用 git 给自己的任务做版本历史？把下面这行删掉再 add 就行。
+tasks.json
+
+# Windows 小窗跑起来后自己生成的
+desktop/trace.log
+desktop/error.log
+desktop/launch.log
+desktop/selftest.log
+desktop/widget.pid
+desktop/window.json
